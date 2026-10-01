@@ -393,7 +393,8 @@
     "official_site": "https://cartesia.ai/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free plan: $1/month prepaid voice-agent credit (~17 agent minutes)"
   },
   {
     "name": "Deepgram Aura",
@@ -405,7 +406,8 @@
     "official_site": "https://deepgram.com/aura",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: $200 signup credit, no credit card required"
   },
   {
     "name": "Resemble AI",
@@ -429,7 +431,8 @@
     "official_site": "https://murf.ai/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: $10 credit every month, no credit card required (API)"
   },
   {
     "name": "WellSaid Labs",
@@ -441,7 +444,8 @@
     "official_site": "https://docs.wellsaidlabs.com/reference",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free trial: 3 download minutes/month, no credit card, no commercial rights"
   },
   {
     "name": "Lovo",
@@ -465,7 +469,8 @@
     "official_site": "https://dev.hume.ai/docs/text-to-speech-tts/overview",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free tier: 10,000 TTS characters/month (~10 min) + 5 EVI minutes"
   },
   {
     "name": "Rime",
@@ -477,7 +482,8 @@
     "official_site": "https://docs.rime.ai/docs/introduction",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: ~800 minutes (~800k characters), no credit card required"
   },
   {
     "name": "MiniMax Audio",
@@ -513,7 +519,8 @@
     "official_site": "https://speechify.com/blog/does-speechify-have-speech-to-text/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: $0/month, 500K characters/month, no credit card, commercial use allowed"
   },
   {
     "name": "ReadSpeaker",
@@ -525,7 +532,8 @@
     "official_site": "https://www.readspeaker.com/products/speechcloud-api/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: 14-day free trial (TextAid), no credit card"
   },
   {
     "name": "Acapela Group",
@@ -537,7 +545,8 @@
     "official_site": "https://www.acapela-group.com/voices/available-languages/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: 3-month free trial (My-Own-Voice voice evaluation)"
   },
   {
     "name": "CereProc",
@@ -561,7 +570,8 @@
     "official_site": "https://www.respeecher.com/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free trial of STS and TTS technology"
   },
   {
     "name": "Amazon Polly",
@@ -573,7 +583,8 @@
     "official_site": "https://aws.amazon.com/polly/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: 5M chars/month Standard, 1M Neural, 500K Long-Form, 100K Generative — first 12 months"
   },
   {
     "name": "Google Cloud TTS",
@@ -585,7 +596,8 @@
     "official_site": "https://cloud.google.com/text-to-speech",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free usage/month: Standard/WaveNet 0–4M chars; Neural2/Polyglot/Studio/Chirp 3 HD 0–1M chars (Gemini-TTS: none)"
   },
   {
     "name": "Azure AI Speech",
@@ -597,7 +609,8 @@
     "official_site": "https://azure.microsoft.com/en-us/products/ai-foundry/tools/speech",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free (F0) tier: 0.5M neural TTS characters/month"
   },
   {
     "name": "IBM Watson TTS",
@@ -621,7 +634,8 @@
     "official_site": "https://voicemaker.in",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: $0/forever, limited generations (250 chars/convert)"
   },
   {
     "name": "NaturalReader",
@@ -633,7 +647,8 @@
     "official_site": "https://www.naturalreaders.com/webapp.html",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "Free: explore all voices and features before subscribing; downloads require a paid plan"
   },
   {
     "name": "Dubverse",
@@ -645,7 +660,8 @@
     "official_site": "https://dubverse.ai/blog/6-reasons-why-youtubers-should-create-multilingual-content/",
     "stars": null,
     "verified": true,
-    "unverified_reason": null
+    "unverified_reason": null,
+    "free_trial": "2-day free trial, no credit card required"
   },
   {
     "category": "toolkits-frameworks",
@@ -982,5 +998,91 @@
     "stars": null,
     "verified": true,
     "unverified_reason": null
+  },
+  {
+    "name": "Pocket TTS",
+    "category": "neural-tts-models",
+    "description": "Kyutai's 100M-parameter CPU-first TTS: a continuous-latent autoregressive model (CALM paper, arXiv:2509.06926) streaming 24 kHz speech in 80 ms chunks — faster than real-time on two CPU cores — with zero-shot voice cloning across 6 languages (EN, FR, DE, PT, IT, ES).",
+    "homepage": "https://github.com/kyutai-labs/pocket-tts",
+    "repo": "https://github.com/kyutai-labs/pocket-tts",
+    "official_site": "https://kyutai.org/pocket-tts",
+    "license": "MIT (code) + CC-BY-4.0 (weights)",
+    "stars": 9725,
+    "verified": true,
+    "unverified_reason": null
+  },
+  {
+    "name": "Kyutai TTS",
+    "category": "neural-tts-models",
+    "description": "Kyutai's flagship streaming TTS line (1.6B model plus a 0.75B public-data variant): decoder-only transformers generating Mimi-tokenized audio in real time from text, built on the delayed-streams multistream architecture shared with Moshi.",
+    "homepage": "https://github.com/kyutai-labs/delayed-streams-modeling",
+    "repo": "https://github.com/kyutai-labs/delayed-streams-modeling",
+    "official_site": "https://kyutai.org",
+    "license": "Apache-2.0 (code) + CC-BY-4.0 (weights)",
+    "stars": 3034,
+    "verified": true,
+    "unverified_reason": null
+  },
+  {
+    "name": "Higgs Audio",
+    "category": "neural-tts-models",
+    "description": "Boson AI's 4B chat-native TTS (Qwen3-4B backbone): conversational synthesis across 100+ languages with zero-shot voice cloning and inline emotion/style/prosody control tags; self-hostable via SGLang-Omni or served through a hosted OpenAI-compatible API.",
+    "homepage": "https://github.com/boson-ai/higgs-audio",
+    "repo": "https://github.com/boson-ai/higgs-audio",
+    "official_site": "https://huggingface.co/bosonai/higgs-audio-v3-tts-4b",
+    "license": "Apache-2.0 (code) + Boson Higgs Audio v3 Research and Non-Commercial License (weights)",
+    "stars": 8363,
+    "verified": true,
+    "unverified_reason": null
+  },
+  {
+    "name": "Moshi",
+    "category": "streaming-realtime",
+    "description": "Kyutai's full-duplex spoken-dialogue foundation model: streaming speech-to-speech with real-time Mimi-coded audio generation. A dialogue engine rather than a pure TTS model, included as the core of Kyutai's real-time voice stack.",
+    "homepage": "https://github.com/kyutai-labs/moshi",
+    "repo": "https://github.com/kyutai-labs/moshi",
+    "official_site": "https://github.com/kyutai-labs/moshi",
+    "license": "Apache-2.0",
+    "stars": 11166,
+    "verified": true,
+    "unverified_reason": null
+  },
+  {
+    "name": "SpeechBrain",
+    "category": "toolkits-frameworks",
+    "description": "PyTorch speech toolkit with ready-made TTS recipes (Tacotron 2, FastSpeech 2, VITS and others) plus training, inference, and pretrained-model interfaces spanning the full speech pipeline.",
+    "homepage": "https://github.com/speechbrain/speechbrain",
+    "repo": "https://github.com/speechbrain/speechbrain",
+    "official_site": "https://github.com/speechbrain/speechbrain",
+    "license": "Apache-2.0",
+    "stars": 11851,
+    "verified": true,
+    "unverified_reason": null
+  },
+  {
+    "name": "Inworld",
+    "category": "commercial-apis",
+    "description": "Voice AI platform for games and interactive media: TTS-2/TTS-1.5 character voices with real-time WebSocket streaming and voice cloning, alongside STT and speech-to-speech APIs; acquired voice-agent platform Ultravox in 2026.",
+    "homepage": "https://inworld.ai/",
+    "repo": null,
+    "official_site": "https://docs.inworld.ai/docs/tts",
+    "license": "proprietary",
+    "stars": null,
+    "verified": true,
+    "unverified_reason": null,
+    "free_trial": "Free: On-Demand plan — start free, up to 70 min TTS included"
+  },
+  {
+    "name": "Narakeet",
+    "category": "commercial-apis",
+    "description": "Script-to-voiceover platform (Video Puppet Ltd, UK): 900 voices in 100 languages with a simple REST TTS API, plus PowerPoint/markdown-to-narrated-video; one-time credit top-ups from $6, credits never expire.",
+    "homepage": "https://www.narakeet.com",
+    "repo": null,
+    "official_site": "https://www.narakeet.com",
+    "license": "proprietary",
+    "stars": null,
+    "verified": true,
+    "unverified_reason": null,
+    "free_trial": "Free account: 20 conversions (no commercial use, limited script sizes)"
   }
 ]
