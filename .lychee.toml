@@ -2,6 +2,10 @@
 # Excludes are regexes — domain-bare patterns cover www/subdomains.
 
 exclude = [
+  # CI-proven 2026-10-01: lovo.ai serves 402 to automated traffic (bot-block);
+  # the site is live for browsers, so the URL stays.
+  "lovo\\.ai",
+
   # Bot-blocking / aggressive anti-automation (CI-proven in the sibling awesome-llm-asr CI run)
   "elevenlabs\\.io",
   "cartesia\\.ai",

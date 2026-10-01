@@ -10,6 +10,7 @@ Renames, shutdowns, archival notices, and license gotchas affecting this list. L
 - **Papercup** — IP acquired by RWS (June 2025). Excluded as an independent product.
 - **stepfun-ai/Step-Audio** — carries a "no longer maintained" notice. Excluded.
 - **rhasspy/piper** — archived October 2025. The maintained successor is `OHF-Voice/piper1-gpl` (listed); note the license changed from MIT to GPL-3.0.
+- **Replica Studios** — shut down 2025-06-30 (MultiLingual); site offline. Removed from the live list 2026-10-01.
 
 ## Renames and org moves
 
@@ -17,6 +18,14 @@ Renames, shutdowns, archival notices, and license gotchas affecting this list. L
 - **Parler-TTS** — moved from `descriptinc` to the `huggingface` org; maintained by Hugging Face.
 - **FireRedTTS** — the active line is **FireRedTTS3** (`FireRedTeam/FireRedTTS3`); v1 (`FireRedTeam/FireRedTTS`) is stale.
 - **Rime** — flagship model rebranded to "Coda" (~2026-09); entry describes the platform generically to resist drift.
+
+## Post-publish link fixes (2026-10-01, CI run 36902917604)
+
+- **TTSDS** — ttsdsbenchmark.com unresolvable from multiple networks; entry now links the live project repo `ttsds/ttsds`.
+- **VERSA** — repo moved `shinjiwlab/versa` → `wavlab-speech/versa`.
+- **CereProc** — acquired by Capacity (Jul 2024); entry now links the current "CereProc by Capacity" product page.
+- Canonical URL updates from CI-observed redirects: ReadSpeaker, Azure AI Speech, IBM Watson TTS, VCTK, NaturalReader (http→https), MiniMax Audio, PaddleSpeech.
+- Lychee exclusion added: `lovo.ai` (serves 402 to automated traffic; site is live for browsers).
 
 ## Stale but listed (functional research/product artifacts)
 
