@@ -2,23 +2,24 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Entries](https://img.shields.io/badge/entries-82-blue)](data/tts.json)
+[![Entries](https://img.shields.io/badge/entries-89-blue)](data/tts.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A curated list of **LLM-era text-to-speech** (speech synthesis): open neural TTS models, streaming/real-time engines, commercial TTS APIs, training toolkits, voice conversion, evaluation benchmarks, and TTS datasets.
 
 > **Scope:** text-to-speech only. ASR/speech-to-text lives in the sibling [Awesome-llm-asr](https://github.com/Awesome-llms-labs/Awesome-llm-asr). Music generation and general audio generation are separate subdomains.
-> **Honesty policy:** every entry was verified on an official source (project repo, LICENSE file, or official site) as of 2026-10-01 — **82/82 verified**. Proprietary APIs and models are explicitly labeled and never presented as open source. Non-commercial and research-only licenses (CC-BY-NC-*, custom research agreements) are flagged with their exact terms in the entry itself — never softened. Machine-readable data lives in [`data/tts.json`](data/tts.json).
+> **Honesty policy:** every entry was verified on an official source (project repo, LICENSE file, or official site) as of 2026-10-01 — **89/89 verified**. Proprietary APIs and models are explicitly labeled and never presented as open source. Non-commercial and research-only licenses (CC-BY-NC-*, custom research agreements) are flagged with their exact terms in the entry itself — never softened. Machine-readable data lives in [`data/tts.json`](data/tts.json).
 
 ## Contents
 
-- [Neural TTS Models](#neural-tts-models) — 23 entries
-- [Streaming & Real-Time TTS](#streaming--real-time-tts) — 7 entries
-- [Commercial TTS APIs](#commercial-tts-apis) — 24 entries
-- [Toolkits & Frameworks](#toolkits--frameworks) — 8 entries
+- [Neural TTS Models](#neural-tts-models) — 26 entries
+- [Streaming & Real-Time TTS](#streaming--real-time-tts) — 8 entries
+- [Commercial TTS APIs](#commercial-tts-apis) — 26 entries
+- [Toolkits & Frameworks](#toolkits--frameworks) — 9 entries
 - [Voice Conversion](#voice-conversion) — 3 entries
 - [Benchmarks & Evals](#benchmarks--evals) — 6 entries
 - [TTS Datasets](#tts-datasets) — 11 entries
+- [Free Trials & Free Tiers](#free-trials--free-tiers)
 
 ## Choosing the right TTS
 
@@ -26,7 +27,7 @@ New here? Start with the [choosing-a-tts-tool](docs/choosing-a-tts-tool.md) guid
 
 ## Neural TTS Models
 
-Open and open-weight neural speech-synthesis models — the checkpoints and code behind modern TTS. (23 entries)
+Open and open-weight neural speech-synthesis models — the checkpoints and code behind modern TTS. (26 entries)
 
 - [VALL-E](https://github.com/lifeiteng/vall-e) — Unofficial PyTorch reimplementation of Microsoft's VALL-E zero-shot TTS model, which frames text-to-speech as conditional language modeling over discrete neural audio codec codes. *(Apache-2.0 · ⭐ 2,220)*
 - [Bark](https://github.com/suno-ai/bark) — Text-prompted generative audio model from Suno that synthesizes realistic multilingual speech from short prompts; the upstream repo has seen no commits since August 2024. *(MIT · ⭐ 39,274)*
@@ -51,9 +52,12 @@ Open and open-weight neural speech-synthesis models — the checkpoints and code
 - [Sesame CSM](https://github.com/SesameAILabs/csm) — Conversational Speech Model from Sesame that generates RVQ audio tokens for natural dialogue speech. *(Apache-2.0 · ⭐ 14,729)*
 - [Chatterbox](https://github.com/resemble-ai/chatterbox) — Open-source TTS from Resemble AI with emotion exaggeration control and multilingual zero-shot voice cloning. *(MIT · ⭐ 26,638)*
 - [MARS5-TTS](https://github.com/Camb-ai/MARS5-TTS) — English TTS model from CAMB.AI with deep zero-shot voice cloning; last updated August 2024. *(AGPL-3.0 · ⭐ 2,822)*
+- [Pocket TTS](https://github.com/kyutai-labs/pocket-tts) — Kyutai's 100M-parameter CPU-first TTS: a continuous-latent autoregressive model (CALM paper, arXiv:2509.06926) streaming 24 kHz speech in 80 ms chunks — faster than real-time on two CPU cores — with zero-shot voice cloning across 6 languages (EN, FR, DE, PT, IT, ES). *(MIT (code) + CC-BY-4.0 (weights) · ⭐ 9,725)*
+- [Kyutai TTS](https://github.com/kyutai-labs/delayed-streams-modeling) — Kyutai's flagship streaming TTS line (1.6B model plus a 0.75B public-data variant): decoder-only transformers generating Mimi-tokenized audio in real time from text, built on the delayed-streams multistream architecture shared with Moshi. *(Apache-2.0 (code) + CC-BY-4.0 (weights) · ⭐ 3,034)*
+- [Higgs Audio](https://github.com/boson-ai/higgs-audio) — Boson AI's 4B chat-native TTS (Qwen3-4B backbone): conversational synthesis across 100+ languages with zero-shot voice cloning and inline emotion/style/prosody control tags; self-hostable via SGLang-Omni or served through a hosted OpenAI-compatible API. *(Apache-2.0 (code) + Boson Higgs Audio v3 Research and Non-Commercial License (weights) · ⭐ 8,363)*
 ## Streaming & Real-Time TTS
 
-Models and engines built for low-latency, streaming synthesis — the stack voice agents run on. (7 entries)
+Models and engines built for low-latency, streaming synthesis — the stack voice agents run on. (8 entries)
 
 - [Orpheus-TTS](https://github.com/canopyai/Orpheus-TTS) — Llama-based speech LLM for emotive TTS with roughly 200ms real-time streaming latency and emotion tags; the weights inherit the Llama 3.2 Community License via the base model. *(Apache-2.0 · ⭐ 6,346)*
 - [Qwen3-TTS](https://github.com/QwenLM/Qwen3-TTS) — Open-source streaming TTS series from Alibaba's Qwen team supporting voice cloning, voice design, and low-latency generation. *(Apache-2.0 · ⭐ 13,607)*
@@ -62,9 +66,10 @@ Models and engines built for low-latency, streaming synthesis — the stack voic
 - [KittenTTS](https://github.com/KittenML/KittenTTS) — Sub-25MB TTS model that synthesizes speech in real time on CPU. *(Apache-2.0 · ⭐ 15,492)*
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS) — High-quality multilingual TTS library (English, Spanish, French, Chinese, Japanese, Korean) that runs in real time on CPU. *(MIT · ⭐ 7,650)*
 - [Piper](https://github.com/OHF-Voice/piper1-gpl) — Fast local neural TTS engine running ONNX voices in many languages; the maintained Open Home Foundation fork (OHF-Voice/piper1-gpl) of the archived MIT original, widely used for on-device voice synthesis. *(GPL-3.0 · ⭐ 5,738)*
+- [Moshi](https://github.com/kyutai-labs/moshi) — Kyutai's full-duplex spoken-dialogue foundation model: streaming speech-to-speech with real-time Mimi-coded audio generation. A dialogue engine rather than a pure TTS model, included as the core of Kyutai's real-time voice stack. *(Apache-2.0 · ⭐ 11,166)*
 ## Commercial TTS APIs
 
-Hosted text-to-speech APIs and platforms. All proprietary with usage-based pricing — listed for completeness, never as open source. (24 entries)
+Hosted text-to-speech APIs and platforms. All proprietary with usage-based pricing — listed for completeness, never as open source. (26 entries)
 
 - [ElevenLabs](https://elevenlabs.io/) — AI voice platform with multilingual text-to-speech, voice cloning, and AI dubbing across a library of expressive voices and Eleven v3 / Turbo-class models. *(proprietary)*
 - [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech) — OpenAI's text-to-speech API offering tts-1, tts-1-hd, and the steerable gpt-4o-mini-tts model with instructions-based voice control and real-time streaming. *(proprietary)*
@@ -90,9 +95,11 @@ Hosted text-to-speech APIs and platforms. All proprietary with usage-based prici
 - [Voicemaker](https://voicemaker.in) — Web TTS platform with 1000+ voices in 130+ languages, SSML/pronunciation controls, voice cloning, and a REST API for developers. *(proprietary)*
 - [NaturalReader](https://www.naturalreaders.com/webapp.html) — TTS reader app (web, mobile, Chrome) with 1000+ AI voices for personal listening and a separate commercial AI Voice Generator for voiceover work. *(proprietary)*
 - [Dubverse](https://dubverse.ai/blog/6-reasons-why-youtubers-should-create-multilingual-content/) — AI video-dubbing and localization platform with standalone TTS voiceovers (SAY, 500+ voices), voice cloning, and a developer TTS API; team joined Exotel in April 2026 while the product continues independently. *(proprietary)*
+- [Inworld](https://inworld.ai/) — Voice AI platform for games and interactive media: TTS-2/TTS-1.5 character voices with real-time WebSocket streaming and voice cloning, alongside STT and speech-to-speech APIs; acquired voice-agent platform Ultravox in 2026. *(proprietary)*
+- [Narakeet](https://www.narakeet.com) — Script-to-voiceover platform (Video Puppet Ltd, UK): 900 voices in 100 languages with a simple REST TTS API, plus PowerPoint/markdown-to-narrated-video; one-time credit top-ups from $6, credits never expire. *(proprietary)*
 ## Toolkits & Frameworks
 
-Training and inference toolkits for building TTS systems, from research recipes to production runtimes. (8 entries)
+Training and inference toolkits for building TTS systems, from research recipes to production runtimes. (9 entries)
 
 - [Coqui TTS](https://github.com/coqui-ai/TTS) — Community-maintained deep-learning TTS library with 100+ pretrained models (Tacotron, VITS, XTTS, Bark); the company Coqui shut down in January 2025 and commits are rare. *(MPL-2.0 · ⭐ 46,097)*
 - [ESPnet](https://espnet.github.io/espnet/) — End-to-end speech processing toolkit with actively maintained TTS recipes (VITS, FastSpeech 2, Tacotron 2) and pretrained models. *(Apache-2.0 · ⭐ 9,976)*
@@ -102,6 +109,7 @@ Training and inference toolkits for building TTS systems, from research recipes 
 - [VITS](https://jaywalnut310.github.io/vits-demo/index.html) — Official reference implementation of VITS (conditional VAE with adversarial learning); stable with no commits since December 2023. *(MIT · ⭐ 7,894)*
 - [Mimic 3](https://github.com/MycroftAI/mimic3) — Fast, local, offline neural TTS system (VITS-based) from Mycroft AI; repo is quiet since March 2025 after the company wound down. *(AGPL-3.0 · ⭐ 1,264)*
 - [WEST](https://github.com/wenet-e2e/west) — LLM-based speech toolkit (understanding, generation, interaction) from the WeNet team, with TouchTTS recipes on LibriTTS and a C++ streaming runtime; young project (2025). *(Apache-2.0 · ⭐ 212)*
+- [SpeechBrain](https://github.com/speechbrain/speechbrain) — PyTorch speech toolkit with ready-made TTS recipes (Tacotron 2, FastSpeech 2, VITS and others) plus training, inference, and pretrained-model interfaces spanning the full speech pipeline. *(Apache-2.0 · ⭐ 11,851)*
 ## Voice Conversion
 
 Voice cloning and conversion tools that overlap speech synthesis. Pure music/singing tools are out of scope. (3 entries)
@@ -184,3 +192,28 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) — entries must be real, verifie
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This list is released under the [MIT License](LICENSE). The projects listed keep their own licenses, noted per entry.
+
+## Free Trials & Free Tiers
+
+Which commercial APIs let you try before you pay. Offers verified against official pricing pages on 2026-10-01 and they change — check the linked page before relying on one. Open-weight models elsewhere in this list are free to self-host by definition, so this section covers commercial APIs only.
+
+| API | Free offer |
+|---|---|
+| [Acapela Group](https://www.acapela-group.com/voices/available-languages/) | Free: 3-month free trial (My-Own-Voice voice evaluation) |
+| [Amazon Polly](https://aws.amazon.com/polly/) | Free: 5M chars/month Standard, 1M Neural, 500K Long-Form, 100K Generative — first 12 months |
+| [Azure AI Speech](https://azure.microsoft.com/en-us/products/ai-foundry/tools/speech) | Free (F0) tier: 0.5M neural TTS characters/month |
+| [Cartesia](https://docs.cartesia.ai) | Free plan: $1/month prepaid voice-agent credit (~17 agent minutes) |
+| [Deepgram Aura](https://deepgram.com/aura) | Free: $200 signup credit, no credit card required |
+| [Dubverse](https://dubverse.ai/blog/6-reasons-why-youtubers-should-create-multilingual-content/) | 2-day free trial, no credit card required |
+| [Google Cloud TTS](https://cloud.google.com/text-to-speech) | Free usage/month: Standard/WaveNet 0–4M chars; Neural2/Polyglot/Studio/Chirp 3 HD 0–1M chars (Gemini-TTS: none) |
+| [Hume AI Octave](https://dev.hume.ai/docs/text-to-speech-tts/overview) | Free tier: 10,000 TTS characters/month (~10 min) + 5 EVI minutes |
+| [Inworld](https://inworld.ai/) | Free: On-Demand plan — start free, up to 70 min TTS included |
+| [Murf](https://murf.ai/) | Free: $10 credit every month, no credit card required (API) |
+| [Narakeet](https://www.narakeet.com) | Free account: 20 conversions (no commercial use, limited script sizes) |
+| [NaturalReader](https://www.naturalreaders.com/webapp.html) | Free: explore all voices and features before subscribing; downloads require a paid plan |
+| [ReadSpeaker](https://www.readspeaker.com/products/speechcloud-api/) | Free: 14-day free trial (TextAid), no credit card |
+| [Respeecher](https://www.respeecher.com/) | Free trial of STS and TTS technology |
+| [Rime](https://docs.rime.ai/docs/introduction) | Free: ~800 minutes (~800k characters), no credit card required |
+| [Speechify](https://speechify.com/blog/text-speech-app-for-windows/) | Free: $0/month, 500K characters/month, no credit card, commercial use allowed |
+| [Voicemaker](https://voicemaker.in) | Free: $0/forever, limited generations (250 chars/convert) |
+| [WellSaid Labs](https://docs.wellsaidlabs.com/reference/getting-started-with-your-api) | Free trial: 3 download minutes/month, no credit card, no commercial rights |
