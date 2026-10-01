@@ -105,6 +105,14 @@ jobs:
               if anchor not in header_slugs:
                   errors.append(f"TOC anchor has no matching header: {m.group(1)}")
 
+
+          # Free Trials & Free Tiers section must list exactly the entries with a free_trial offer
+          ft_start = readme.index("## Free Trials & Free Tiers")
+          ft_rows = set(re.findall(r"^\| \[([^\]]+)\]", readme[ft_start:], re.M))
+          offered = {e["name"] for e in data if e.get("free_trial")}
+          if ft_rows != offered:
+              errors.append(f"Free-trials section mismatch: only-in-table={sorted(ft_rows - offered)}, missing-from-table={sorted(offered - ft_rows)}")
+
           if errors:
               print("\n".join(errors))
               sys.exit(1)
