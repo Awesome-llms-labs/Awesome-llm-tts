@@ -1,0 +1,18 @@
+# lychee configuration for awesome-llm-tts
+# Excludes are regexes — domain-bare patterns cover www/subdomains.
+
+exclude = [
+  # Bot-blocking / aggressive anti-automation (CI-proven in the sibling awesome-llm-asr CI run)
+  "elevenlabs\\.io",
+  "cartesia\\.ai",
+  "deepgram\\.com",
+  "openai\\.com",
+  # Rate-limit heavy (CI-proven in the sibling awesome-llm-asr CI run)
+  "huggingface\\.co",
+  "arxiv\\.org",
+]
+
+# Be lenient with transient failures but strict about real breakage
+max_retries = 2
+timeout = 20
+accept = [200, 201, 202, 203, 204, 206]
