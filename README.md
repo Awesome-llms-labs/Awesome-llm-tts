@@ -2,20 +2,20 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Entries](https://img.shields.io/badge/entries-89-blue)](data/tts.json)
+[![Entries](https://img.shields.io/badge/entries-90-blue)](data/tts.json)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A curated list of **LLM-era text-to-speech** (speech synthesis): open neural TTS models, streaming/real-time engines, commercial TTS APIs, training toolkits, voice conversion, evaluation benchmarks, and TTS datasets.
 
 > **Scope:** text-to-speech only. ASR/speech-to-text lives in the sibling [Awesome-llm-asr](https://github.com/Awesome-llms-labs/Awesome-llm-asr). Music generation and general audio generation are separate subdomains.
-> **Honesty policy:** every entry was verified on an official source (project repo, LICENSE file, or official site) as of 2026-10-01 — **89/89 verified**. Proprietary APIs and models are explicitly labeled and never presented as open source. Non-commercial and research-only licenses (CC-BY-NC-*, custom research agreements) are flagged with their exact terms in the entry itself — never softened. Machine-readable data lives in [`data/tts.json`](data/tts.json).
+> **Honesty policy:** every entry was verified on an official source (project repo, LICENSE file, or official site) as of 2026-10-01 (faster_tts added and verified on 2026-10-30) — **90/90 verified**. Proprietary APIs and models are explicitly labeled and never presented as open source. Non-commercial and research-only licenses (CC-BY-NC-*, custom research agreements) are flagged with their exact terms in the entry itself — never softened. Machine-readable data lives in [`data/tts.json`](data/tts.json).
 
 ## Contents
 
 - [Neural TTS Models](#neural-tts-models) — 26 entries
 - [Streaming & Real-Time TTS](#streaming--real-time-tts) — 8 entries
 - [Commercial TTS APIs](#commercial-tts-apis) — 26 entries
-- [Toolkits & Frameworks](#toolkits--frameworks) — 9 entries
+- [Toolkits & Frameworks](#toolkits--frameworks) — 10 entries
 - [Voice Conversion](#voice-conversion) — 3 entries
 - [Benchmarks & Evals](#benchmarks--evals) — 6 entries
 - [TTS Datasets](#tts-datasets) — 11 entries
@@ -99,7 +99,7 @@ Hosted text-to-speech APIs and platforms. All proprietary with usage-based prici
 - [Narakeet](https://www.narakeet.com) — Script-to-voiceover platform (Video Puppet Ltd, UK): 900 voices in 100 languages with a simple REST TTS API, plus PowerPoint/markdown-to-narrated-video; one-time credit top-ups from $6, credits never expire. *(proprietary)*
 ## Toolkits & Frameworks
 
-Training and inference toolkits for building TTS systems, from research recipes to production runtimes. (9 entries)
+Training and inference toolkits for building TTS systems, from research recipes to production runtimes. (10 entries)
 
 - [Coqui TTS](https://github.com/coqui-ai/TTS) — Community-maintained deep-learning TTS library with 100+ pretrained models (Tacotron, VITS, XTTS, Bark); the company Coqui shut down in January 2025 and commits are rare. *(MPL-2.0 · ⭐ 46,097)*
 - [ESPnet](https://espnet.github.io/espnet/) — End-to-end speech processing toolkit with actively maintained TTS recipes (VITS, FastSpeech 2, Tacotron 2) and pretrained models. *(Apache-2.0 · ⭐ 9,976)*
@@ -110,6 +110,7 @@ Training and inference toolkits for building TTS systems, from research recipes 
 - [Mimic 3](https://github.com/MycroftAI/mimic3) — Fast, local, offline neural TTS system (VITS-based) from Mycroft AI; repo is quiet since March 2025 after the company wound down. *(AGPL-3.0 · ⭐ 1,264)*
 - [WEST](https://github.com/wenet-e2e/west) — LLM-based speech toolkit (understanding, generation, interaction) from the WeNet team, with TouchTTS recipes on LibriTTS and a C++ streaming runtime; young project (2025). *(Apache-2.0 · ⭐ 212)*
 - [SpeechBrain](https://github.com/speechbrain/speechbrain) — PyTorch speech toolkit with ready-made TTS recipes (Tacotron 2, FastSpeech 2, VITS and others) plus training, inference, and pretrained-model interfaces spanning the full speech pipeline. *(Apache-2.0 · ⭐ 11,851)*
+- [faster_tts](https://github.com/jordimas/faster_tts) — Python library and CLI for Drama 3 text-to-speech using CTranslate2, with CPU/GPU inference, INT8 quantization, model downloading and caching, and speaker-tagged dialogue. *(MIT; model weights are separately licensed)*
 ## Voice Conversion
 
 Voice cloning and conversion tools that overlap speech synthesis. Pure music/singing tools are out of scope. (3 entries)

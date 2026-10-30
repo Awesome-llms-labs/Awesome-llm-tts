@@ -1060,6 +1060,18 @@
     "unverified_reason": null
   },
   {
+    "category": "toolkits-frameworks",
+    "description": "Python library and CLI for Drama 3 text-to-speech using CTranslate2, with CPU/GPU inference, INT8 quantization, model downloading and caching, and speaker-tagged dialogue.",
+    "homepage": "https://github.com/jordimas/faster_tts",
+    "license": "MIT",
+    "name": "faster_tts",
+    "official_site": null,
+    "repo": "https://github.com/jordimas/faster_tts",
+    "stars": null,
+    "unverified_reason": null,
+    "verified": true
+  },
+  {
     "name": "Inworld",
     "category": "commercial-apis",
     "description": "Voice AI platform for games and interactive media: TTS-2/TTS-1.5 character voices with real-time WebSocket streaming and voice cloning, alongside STT and speech-to-speech APIs; acquired voice-agent platform Ultravox in 2026.",
